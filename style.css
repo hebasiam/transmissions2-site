@@ -60,7 +60,7 @@ ul {
 header {
   height: 100vh;
   height: 100vh;
-  background: url("img/الخلفية.jpg") center center/cover no-repeat;
+  background: url("bac1.jpg") center center/cover no-repeat;
   position: relative;
   position: relative;
 }
@@ -757,3 +757,4 @@ header * {
   
   }
 /* Offers Section end */
+
