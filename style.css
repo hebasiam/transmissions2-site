@@ -1,0 +1,759 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Utility Classes */
+.btn {
+  display: inline-block;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  border: 1px solid #fff;
+}
+
+.btn-secondary,
+.btn-third:hover {
+  background: #161616;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover,
+.btn-third {
+  background: #e90707;
+}
+
+.primary-text {
+  color: #da1b1b;
+}
+
+/* Header Start */
+header {
+  height: 100vh;
+  height: 100vh;
+  background: url("img/الخلفية.jpg") center center/cover no-repeat;
+  position: relative;
+  position: relative;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+}
+
+#navbar img {
+  width: 150px;
+  margin-left: 150px;
+}
+
+nav ul {
+  display: flex;
+  margin-right: 100px;
+}
+
+nav ul li a {
+  padding: 15px 20px;
+  font-weight: 600;
+}
+
+nav ul li a:hover {
+  border-bottom: 2px solid #b7b5b4;
+}
+
+header .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 75%; /* Add exmple of greeen background */
+}
+
+header::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgb(0, 0, 0, 0.6);
+}
+
+header .content h1 {
+  font-size: 40px;
+  color: #fff;
+}
+
+header .content p {
+  color: #fff;
+  margin: 20px 0 40px;
+}
+
+header * {
+  z-index: 10;
+}
+
+/* Header End */
+
+/* ابحث عن هذا الجزء في ملف style.css أو أضفه في نهايته */
+#about .title h2 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* توحيد الخط */
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#about .about-content p {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* نفس خط العنوان */
+  font-size: 18px;           /* حجم مناسب للفقرة */
+  line-height: 1.8;          /* مسافة بين الأسطر لراحة العين */
+  text-align: center;        /* توسيط النص مثل العنوان */
+  max-width: 800px;          /* تحديد العرض لكي لا يتمدد النص كثيراً */
+  margin: 0 auto;            /* لتوسيط كتلة النص في الصفحة */
+  color: #444;               /* لون مريح للنظر */
+}
+/* About Start */
+#about {
+  text-align: center;
+  height: 80vh;
+  background: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+}
+
+#about .title,
+#offers .title,
+#menu .title {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+#about h2,
+#offers h2,
+#menu h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+#about h2 {
+  color: #383848;
+  margin-bottom: 20px;
+}
+
+#about .title p {
+  font-weight: 600;
+  font-size: 14px;
+  color: #9a9a9a;
+  
+}
+
+#about .about-content {
+  display: contents;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+#about .about-content p {
+  margin-right: 10rem;
+  line-height: 2;
+  color: #4b4949;
+  font-weight: 500;
+  max-width: 800px;  /* تحديد أقصى عرض للنص */
+    margin: 0 auto;    /* أهم خاصية: لتوسيط الـ div أو الفقرة في منتصف الصفحة */
+  line-height: 1.6;
+  
+}
+
+/* About End */
+/* Offers Section start */
+#offers {
+  height: 80vh;
+  background: url("img/الخلفية\ 2.jpg") center center/cover fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 30px;
+  
+}
+
+#offers h2 {
+  color: #e4b95b;
+}
+
+#offers .title p {
+  margin: 0 20px;
+  color: #fff;
+  font-weight: 500;
+}
+
+#offers .offers-items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin: 0 20px;
+}
+
+#offers .offers-items img {
+  width: 300px;
+  margin: 0 20px;
+  height: 200px;     /* توحيد الارتفاع لجميع الصور */
+  object-fit: cover; /* لضمان عدم تمدد الصورة بشكل سيء */
+  border-radius: 8px
+  
+}
+
+#offers .offers-items h3 {
+  font-size: 25px;
+  color: #fff;
+  margin: 15px 0;
+}
+
+#offers .offers-items p {
+  color: #fff;
+  font-size: 14px;
+  padding: 0 20px;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+
+#offers .offers-items span {
+  font-weight: 600;
+  font-size: 18px;
+  margin-left: 5px;
+}
+/* تنسيقات عامة للقسم */
+#services {
+    background-color: #f9f9f9; /* خلفية فاتحة ومريحة */
+    padding: 60px 0;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* تنسيق العنوان */
+.title h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 50px;
+}
+
+/* شبكة الخدمات (لجعلها على سطر واحد) */
+.services-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* المسافة بين الصناديق */
+    flex-wrap: wrap; /* لتصبح متجاوبة مع الموبايل */
+}
+
+/* صندوق الخدمة الواحد */
+.service-box {
+    flex: 1;
+    min-width: 300px;
+    max-width: 350px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* ظل خفيف وفخم */
+    transition: transform 0.3s ease;
+}
+
+/* تأثير عند مرور الماوس */
+.service-box:hover {
+    transform: translateY(-5px);
+}
+
+/* تنسيق الصورة */
+.service-box .img-wrapper img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* لضمان عدم تمطد الصورة */
+    border-radius: 5px;
+}
+
+/* تنسيق النصوص داخل الصندوق */
+.service-box h3 {
+    margin: 20px 0 10px;
+    color: #444;
+}
+
+.service-box p {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.6;
+}
+.hero-section {
+  width: 100%;
+  height: 80vh; /* ارتفاع القسم */
+  /* استبدل 'qatar.jpg' بمسار صورة الأبراج عندك */
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+              url('img/خلفية\ 3.png') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero-container {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* لتوزيع الأسهم على الأطراف */
+}
+
+.hero-text h1 {
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* تنسيق الأسهم الجانبية */
+.arrow-btn {
+  background: none;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  color: white;
+  font-size: 24px;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.arrow-btn:hover {
+  background-color: white;
+  color: black;
+}
+.contact-section{
+  padding:80px 10%;
+  background:#f2f2f2;
+  }
+  
+  .contact-container{
+  display:flex;
+  align-items:center;
+  gap:60px;
+  }
+  
+  /* Image */
+  
+  .contact-image img{
+  width:450px;
+  border-radius:5px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.2);
+  }
+  
+  /* Form */
+  body{
+    font-family: 'Poppins', sans-serif;
+    background:#ffffff;
+    color:#000;
+    }
+    
+    .contact-section{
+    padding:100px 0;
+    }
+    
+    .container{
+    width:85%;
+    margin:auto;
+    display:flex;
+    gap:120px;
+    align-items:flex-start;
+    }
+    
+    .contact-info{
+    flex:1;
+    }
+    
+    .contact-info h2{
+    font-size:22px;
+    margin-bottom:25px;
+    color:#000;
+    letter-spacing:1px;
+    }
+    
+    .contact-info p{
+    margin-bottom:18px;
+    font-size:16px;
+    color:#333;
+    display:flex;
+    align-items:center;
+    gap:12px;
+    }
+    
+    .contact-info i{
+    color:#000;
+    font-size:18px;
+    }
+    
+    .social{
+    margin-top:25px;
+    }
+    
+    .social a{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    width:45px;
+    height:45px;
+    border:2px solid #000;
+    border-radius:50%;
+    color:#000;
+    margin-right:12px;
+    font-size:18px;
+    transition:0.3s;
+    }
+    
+    .social a:hover{
+    background:#000;
+    color:#fff;
+    }
+    
+    /* form */
+    
+    .contact-form{
+    flex:1.2;
+    }
+    
+    .contact-form input,
+    .contact-form textarea{
+    width:100%;
+    padding:16px;
+    margin-bottom:18px;
+    border:1px solid #000;
+    background:#fff;
+    font-size:15px;
+    border-radius:6px;
+    font-family:'Poppins', sans-serif;
+    }
+    
+    .contact-form textarea{
+    height:140px;
+    resize:none;
+    }
+    
+    .contact-form button{
+    background:#000;
+    color:#fff;
+    border:none;
+    padding:16px 40px;
+    border-radius:30px;
+    font-size:15px;
+    cursor:pointer;
+    transition:0.3s;
+    }
+    
+    .contact-form button:hover{
+    background:#333;
+    }
+  
+  
+  /* Mobile */
+  
+  @media(max-width:900px){
+  
+  .contact-container{
+  flex-direction:column;
+  }
+  
+  .contact-image img{
+  width:100%;
+  }
+  
+  }
+  body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+    background:#f5f5f5;
+    }
+    
+    .contact-section{
+    padding:80px 0;
+    }
+    
+    .container{
+    width:85%;
+    margin:auto;
+    display:flex;
+    gap:60px;
+    align-items:flex-start;
+    }
+    .contact-info{
+      flex:1;
+      margin-top:-40px;   /* يرفع ADDRESS للأعلى */
+      }
+      
+      /* العناوين */
+      
+      .contact-info h2{
+      font-size:22px;
+      margin-bottom:25px;
+      margin-top:35px;
+      color:#000;
+      letter-spacing:1px;
+      }
+      
+      /* النصوص */
+      
+      .contact-info p{
+      margin-bottom:20px;
+      font-size:16px;
+      color:#000;
+      display:flex;
+      align-items:center;
+      gap:14px;
+      }
+      
+      /* الايقونات */
+      
+      .contact-info i{
+      font-size:18px;
+      color:#000; /* أسود */
+      }
+      
+      /* السوشيال */
+      
+      .social{
+      margin-top:30px;
+      display:flex;
+      gap:15px;
+      }
+      
+      .social a{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      width:45px;
+      height:45px;
+      border:2px solid #000;
+      border-radius:50%;
+      color:#000;
+      background:#fff;
+      font-size:18px;
+      transition:0.3s;
+      }
+      
+      /* hover */
+      
+      .social a:hover{
+      background:#000;
+      color:#fff;
+      }
+    
+    
+    
+    .contact-form{
+    flex:1.2;
+    }
+    
+    .contact-form input,
+    .contact-form textarea{
+    width:100%;
+    padding:15px;
+    margin-bottom:15px;
+    border:none;
+    background:#eaeaea;
+    font-size:15px;
+    border-radius:4px;
+    }
+    
+    .contact-form textarea{
+    height:120px;
+    resize:none;
+    }
+    
+    .contact-form button{
+    background:#000000;
+    color:white;
+    border:none;
+    padding:15px 35px;
+    font-size:15px;
+    border-radius:30px;
+    cursor:pointer;
+    transition:0.3s;
+    }
+    
+    .contact-form button:hover{
+    background:#7e7d7b;
+    }
+    .site-footer{
+      background:#060606;
+      color:white;
+      text-align:center;
+      padding:20px;
+      font-size:15px;
+      }
+      
+      .site-footer p{
+      margin:0;
+      letter-spacing:0.5px;
+      }
+      /* ============================= */
+/* Responsive Design For Mobile */
+/* ============================= */
+
+/* Tablets */
+@media (max-width: 992px) {
+
+  #navbar {
+  flex-direction: column;
+  height: auto;
+  padding: 20px 0;
+  }
+  
+  #navbar img {
+  margin-left: 0;
+  margin-bottom: 10px;
+  }
+  
+  nav ul {
+  margin-right: 0;
+  flex-wrap: wrap;
+  justify-content: center;
+  }
+  
+  header .content h1 {
+  font-size: 32px;
+  text-align: center;
+  }
+  
+  header .content p {
+  text-align: center;
+  padding: 0 20px;
+  }
+  
+  #offers .offers-items {
+  flex-direction: column;
+  gap: 30px;
+  }
+  
+  #offers .offers-items img {
+  width: 100%;
+  max-width: 350px;
+  }
+  
+  .hero-text h1 {
+  font-size: 2rem;
+  }
+  
+  .container {
+  flex-direction: column;
+  gap: 40px;
+  }
+  
+  }
+  
+  /* Mobile */
+  @media (max-width: 600px) {
+  
+  header {
+  height: auto;
+  padding-bottom: 50px;
+  }
+  
+  header .content {
+  height: auto;
+  padding: 40px 20px;
+  }
+  
+  header .content h1 {
+  font-size: 26px;
+  }
+  
+  header .content p {
+  font-size: 14px;
+  }
+  
+  #about {
+  height: auto;
+  padding: 40px 20px;
+  }
+  
+  #about .about-content p {
+  margin-right: 0;
+  font-size: 16px;
+  }
+  
+  #offers {
+  height: auto;
+  padding: 40px 20px;
+  }
+  
+  .hero-section {
+  height: 50vh;
+  }
+  
+  .hero-text h1 {
+  font-size: 1.5rem;
+  }
+  
+  .arrow-btn {
+  font-size: 18px;
+  padding: 8px 10px;
+  }
+  
+  .contact-section {
+  padding: 50px 20px;
+  }
+  
+  .container {
+  width: 100%;
+  }
+  
+  .contact-info,
+  .contact-form {
+  width: 100%;
+  }
+  
+  .contact-form button {
+  width: 100%;
+  }
+  
+  .site-footer {
+  font-size: 13px;
+  padding: 15px;
+  }
+  
+  }
+/* Offers Section end */
