@@ -322,7 +322,7 @@ header * {
   height: 80vh; /* ارتفاع القسم */
   /* استبدل 'qatar.jpg' بمسار صورة الأبراج عندك */
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-              url('img/خلفية\ 3.png') no-repeat center center/cover;
+              url('/main.خلفية3.png') no-repeat center center/cover;
   display: flex;
   align-items: center;
   justify-content: center;
