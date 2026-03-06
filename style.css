@@ -199,7 +199,7 @@ header * {
 /* Offers Section start */
 #offers {
   height: 80vh;
-  background: url("bac2.jpg") center center/cover fixed;
+  background: url("/main.bac2.jpg") center center/cover fixed;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -755,6 +755,7 @@ header * {
   
   }
 /* Offers Section end */
+
 
 
 
